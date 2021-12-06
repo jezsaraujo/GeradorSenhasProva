@@ -55,14 +55,14 @@ export default function App() {
         <Text style={styles.textButton}>Gerar senha</Text>
       </TouchableOpacity>
  
-      {psw  && (
+      {psw  ?
         <View style={styles.area}>
           <Text style={{fontWeight:'bold', fontSize:'15px'}}>{psw}</Text>
           
         </View>
 
       
-      )}     
+      : null}     
         </View>
           <Text style= {styles.nomeAlunos}>Jéssika Araujo e Juliana Teixeira</Text>
       
